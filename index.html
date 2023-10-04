@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: popins sans-serif;
+        }
+        body{
+        background-color:black;
+         
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: black;  
+        }
+        .left{
+            color: white;
+            font-size: 1.3rem;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;      /*removes bullet points*/
+            margin: 0 23px;
+            font-size: 1.09rem;
+            
+        }
+         
+        nav ul li a{
+            text-decoration: none;
+           color: white;
+        }
+       
+        nav ul li a:hover{
+            color: rgb(241, 78, 184);
+            font-size: 1.2rem;
+        }
+        .home{
+            color: white;
+            display: flex;
+             justify-content: space-around;
+             margin: 200px 0; 
+             font-size: 2rem;
+             
+        }
+        .name{
+            font-size: 2.5rem;
+            font-style: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .name1{
+            color: rgb(19, 179, 157);
+        }
+        .first1{
+            margin: -40px;
+            height: 300px;
+            width: 500px;
+            padding-left: 60px;
+            padding-top:50px ;
+            border: 3px solid rgb(236, 158, 203);
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .home div{
+            border: 3px solid rgb(236, 158, 203);  
+            border-radius: 7px;
+        }
+        
+        .about{
+            display: flex;
+             justify-content: space-around;
+             margin: 40px 0;
+             color: white;
+        }
+        .about div{
+            width: 30%; 
+        }
+        .aboutleft{
+           /* margin: 100px 0;*/
+            font-size: 1.2rem;
+            align-items: center;
+        }
+
+        .aboutright img{
+            width: 300px;
+            height: 500px;
+            margin-top: 40px;
+           /* margin: 30px 0;*/
+            border: 3px solid rgb(239, 242, 244);
+            border-radius: 5px;
+        }
+        .scolor{
+            color: rgb(231, 90, 186);  
+        }
+
+        hr{
+            border: 0;
+            background: #34343d;
+            height: 2px;
+            margin: 40px 84px;
+        }
+        .academics{
+              
+              gap: 20px;
+              margin: 20px 0;
+        }
+
+        .main{
+              color:rgb(19, 179, 157) ;
+              font-size: 1.4rem;
+        }
+        .sub{
+            font-size: 1.3rem;
+        }
+
+        .academics li button{
+            height: 35px;
+            width: 90px;
+            border: none;
+            border-radius: 4px;
+            background-color:rgb(19, 179, 157) ;
+            color: rgb(1, 40, 35) ;
+            font-size: 1rem;
+        }
+        
+        .resume{
+            
+            height: 55px;
+            width: 200px;
+            border: white;
+            border-radius: 5px;
+            background-color:rgb(56, 211, 191) ;
+            color: rgb(1, 40, 35) ;
+            font-size: 1.1rem;
+        }
+        .secondsec{
+            color: white;
+        }
+        
+        .secondsec{
+           
+            margin-left: 500px;
+        }
+        .secondsec img{
+
+            display: flex;
+            height: 300px;
+              width: 500px;
+             
+        }
+
+        .secondsec h1{
+            font-size: 2rem;
+            color: aqua;
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .secondsec h3{
+            font-size: 1.4rem;
+            align-items: center; 
+        }
+        .thirdsec{
+            color: white;
+        }
+        
+        .skill{
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .skill img{
+           gap: 40px;
+            height: 200px;
+            width: 300px;
+        }
+        
+        .thirdsec h1{
+            font-size: 2rem;
+            color: aqua;
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .thirdsec h3{
+            font-size: 1.4rem;
+            align-items: center; 
+        }
+        .thirdsec{
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .forthsec{
+            color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+            gap: 20px;
+        }
+        .forthsec h1{
+            font-size: 2rem;
+            color: aqua;
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .forthsec h3{
+            font-size: 1.4rem;
+            align-items: center; 
+        }
+        .forthsec img{
+            gap: 20px;
+        }
+        .fifthsec{
+            color: white;
+            margin-left: 200px;
+            margin-right: 200px;
+            gap: 20px;
+        }
+        .fifthsec h1{
+            font-size: 2rem;
+            color: aqua;
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .fifthsec h3{
+            font-size: 1.4rem;
+            align-items: center; 
+        }
+        .t1{
+            height: 30px;
+            width: 300px;
+            word-spacing: 20px;
+            font-size: 1.1rem;
+            color: rgba(0, 18, 14, 0.777);
+        }
+        .t2{
+            height: 30px;
+            width: 600px;
+            word-spacing: 20px;
+            font-size: 1.2rem;
+            color: rgba(5, 66, 53, 0.777);
+        }
+        .t3{
+            height: 80px;
+            width: 600px;
+            word-spacing: 20px;
+            font-size: 1.2rem;
+            color: rgba(5, 66, 53, 0.777);
+        }
+        .fifthsec button{
+            height: 35px;
+            width: 170px;
+            font-size: 1.3rem;
+            background-color:rgba(9, 131, 104, 0.777); 
+            color: black;
+            border-radius: 5px;
+            border-color: black;
+        }
+        .footer{
+            
+            font-size: 1.2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="left">PRATIKSHA BARGAL</div>
+
+        <div class="right">
+            <ul>
+            <li><a href="#home1"> Home </a></li>
+            <li><a href="#About"> About Me </a></li>
+            <li><a href="#mywork"> Recent Works </a></li>
+            <li><a href="#skills1"> Skills </a></li>
+            <li><a href="#find">Check Me</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home1">
+            <div>
+            <div class="first1">
+                Bonjour! I'm <br>
+                 <span class="name">PRATIKSHA BARGAL</span> <br>
+                 And I'm <br>
+                 <span class="name1">
+                 Java Developer,<br>
+                 Web Developer,<br>
+                 
+                </span>
+            </div>
+        </div>
+        
+        </section>
+           <section>
+        <div class="about" id="About">
+            <div class="aboutleft">
+               I'm Pratiksha and I'm Java Developer, Web Developer, as well as Data Scientist. 
+               I enjoy taking complex problems and turning them into simple design using my coding skills.
+                Currently working on enhancing my problem solving skills in Data Structures and Algorithms.
+                Looking forward to collaborate on different open-source projects.
+                <div class="academics">
+                    <li > <nobr class="main"> Bachelor of Technology - Information Technology </nobr> <br> 
+                        <button>2022-2025</button> <br>
+                        <nobr class="sub"> D. Y. Patil College of Engineering Akurdi, Pune.</nobr>
+                    </li> <br>
+                    <li><nobr class="main"> Diploma - Information Technology </nobr><br> 
+                        <button>2019-2022</button> <br>
+                        <nobr class="sub"> Government Polytechnic Nashik, Nashik.</nobr>
+                    </li><br>
+                    <li><nobr class="main">Maharashtra State Board-10TH </nobr><br> 
+                        <button>2013-2019</button> <br>
+                        <nobr class="sub">Swami Vivekanand Vidyalaya, Dighwad.</nobr>
+                        </li>
+                        <br><br>
+                    <a href="https://drive.google.com/file/d/19WtXAjxg63_9Syu0eVADx25WdGayOHp6/view?usp=drivesdk" target="_blank"><button class="resume">Get My Resume</button></a>
+                    
+                </div>
+            </div>
+            <div class="aboutright">
+                <img src="abc.jpg" alt="developer">
+            </div>
+        </div>
+        
+        </section>
+        <section class="secondsec" id="mywork">
+            <h1> <u> MY WORKS</u></h1>
+            <br>
+            <h3>Here are some websites developed by me!</h3>
+            <br><br><br>
+            <div class="work">
+                 <div class="work1">
+                    <img src="netflixclone.png" alt="netflix clone" class="workimages">
+                    <br><br>
+                    <caption class="cap">This is netflix Clone. <br>Where I have used HTML and CSS.</caption>
+                </div>
+                   <div class="work2">
+                    <img src="portfoliocopy.png" alt="portfolio image" class="workimages">
+                    <br><br>
+                    <caption class="cap">Its my portfolio website <br>which helps any visible to get familiar with me.</caption>
+                 </div>
+        </section>
+        <section class="thirdsec" id="skills1">
+            <br><br><br><br><h1>MY SKILLS</h1>
+            <br><br>
+            <h3>Here are some of the programming languages and technologies <br>I'm learning and trying to become an expert at!</h3>
+            <br><br><br>
+        </section>
+        <section class="skill">
+           <img src="java.jpeg" alt="java logo">
+           <img src="html.png" alt="html logo">
+           <img src="css.png" alt="css logo">
+           <img src="c++.png" alt="c++ logo">
+           <img src="clogo.png" alt="c logo">
+           <img src="sql.jpg" alt="sql logo">
+           <img src="php.jpeg" alt="php logo">
+           <img src="js.png" alt="js logo">
+        </section>
+        <section class="forthsec" id="find">
+            <br><br><br><br>
+            <h1>CHECK ME ON</h1><br><br>
+            <h3>You can check me on following platforms <br>just by clicking on following logos!</h3>
+            <br><br><br>
+            <a href="https://www.linkedin.com/in/pratiksha-bargal-656909258" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/BargalPratiksha" target="_blank"><img src="github.png" alt="gitHub"></a>
+            <a href="" target="_blank"><img src="hackerrank.jpeg" alt="HackerRank"></a>
+        </section>
+        <section class="fifthsec" id="contact">
+            <br><br><br><br>
+            <h1>CONTACT ME</h1>
+            <br><br>
+            <h3>message me</h3><br>
+            <input type="text" placeholder="NAME" class="t1">
+            <input type="text" placeholder="EMAIL" class="t1">
+            <br><br><input type="text" placeholder="subject" class="t2">
+            <br><br><input type="text"placeholder="message" class="t3"><br> <br>
+            <button>Send Message</button> 
+        <footer>
+            <br><br><br><br>
+            <h1>Created By प्रतिक्षा !!!</h1>
+            
+           </footer>
+        </section>
+    </main>
+  
+    
+</body>
+</html>
